@@ -7,6 +7,10 @@
 //
 
 import UserNotifications
+
+// if you want to do a control/test type of thing, then ucomment the following line,
+// also comment references to TrackingService below,
+// and don't forget to unlink "Shared" from the project settings 
 import Shared
 
 class NotificationService: UNNotificationServiceExtension {
@@ -17,15 +21,19 @@ class NotificationService: UNNotificationServiceExtension {
     let networkActivityQueue: DispatchQueue = DispatchQueue(label: "com.opentable.network.activity")
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
-        TrackingService.sharedInstance.firebase.dummyField = false
+        let _ = TrackingService.sharedInstance
+        let _ = TrackingService.sharedInstance.firebase
 
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = bestAttemptContent {
             self.networkActivityQueue.async {
+                // we're doing a sleep for 5 seconds here, for one thing it simulates real life use cases where a network call
+                // is being triggered, and it also helps to keep the process alive for longer for observation purposes.
                 sleep(5)
-                // Modify the notification content here...
+                
+                
                 bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
                 
                 contentHandler(bestAttemptContent)
