@@ -41,6 +41,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let string = deviceToken.otf_stringFromDeviceToken()
+        NSLog("We registered and your token is \(string)")
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        NSLog("We failed registration, sorry")
+    }
 }
 
+
+extension Data {
+    public func otf_stringFromDeviceToken() -> String {
+        let tokenChars = (self as NSData).bytes.bindMemory(to: CChar.self, capacity: self.count)
+        var token = ""
+        
+        for i in 0..<self.count {
+            token = token + String(format: "%02.2hhx", arguments: [tokenChars[i]])
+        }
+        return token
+    }
+}

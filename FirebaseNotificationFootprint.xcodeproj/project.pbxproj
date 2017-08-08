@@ -12,7 +12,42 @@
 		00CFA45F1F393B8B00EE82DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CFA45D1F393B8B00EE82DE /* Main.storyboard */; };
 		00CFA4611F393B8B00EE82DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CFA4601F393B8B00EE82DE /* Assets.xcassets */; };
 		00CFA4641F393B8B00EE82DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CFA4621F393B8B00EE82DE /* LaunchScreen.storyboard */; };
+		00CFA4861F393BC800EE82DE /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 00CFA4841F393BC800EE82DE /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00CFA4891F393BC800EE82DE /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4821F393BC800EE82DE /* Shared.framework */; };
+		00CFA48A1F393BC800EE82DE /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4821F393BC800EE82DE /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00CFA48F1F393BEC00EE82DE /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFA48E1F393BEC00EE82DE /* TrackingService.swift */; };
+		00CFA4911F393C1400EE82DE /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFA4901F393C1400EE82DE /* Firebase.swift */; };
+		00CFA4991F393C5800EE82DE /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4931F393C5800EE82DE /* FirebaseAnalytics.framework */; };
+		00CFA49A1F393C5800EE82DE /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4941F393C5800EE82DE /* FirebaseCore.framework */; };
+		00CFA49B1F393C5800EE82DE /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4951F393C5800EE82DE /* FirebaseCoreDiagnostics.framework */; };
+		00CFA49C1F393C5800EE82DE /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4961F393C5800EE82DE /* FirebaseInstanceID.framework */; };
+		00CFA49D1F393C5800EE82DE /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4971F393C5800EE82DE /* FirebaseNanoPB.framework */; };
+		00CFA49E1F393C5800EE82DE /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4981F393C5800EE82DE /* GoogleToolboxForMac.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00CFA4871F393BC800EE82DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00CFA44E1F393B8B00EE82DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00CFA4811F393BC800EE82DE;
+			remoteInfo = Shared;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00CFA47C1F393BAE00EE82DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00CFA48A1F393BC800EE82DE /* Shared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00CFA4561F393B8B00EE82DE /* FirebaseNotificationFootprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseNotificationFootprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +57,18 @@
 		00CFA4601F393B8B00EE82DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CFA4631F393B8B00EE82DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00CFA4651F393B8B00EE82DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CFA4821F393BC800EE82DE /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CFA4841F393BC800EE82DE /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
+		00CFA4851F393BC800EE82DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CFA48E1F393BEC00EE82DE /* TrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
+		00CFA4901F393C1400EE82DE /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		00CFA4931F393C5800EE82DE /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		00CFA4941F393C5800EE82DE /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		00CFA4951F393C5800EE82DE /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		00CFA4961F393C5800EE82DE /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		00CFA4971F393C5800EE82DE /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		00CFA4981F393C5800EE82DE /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		00CFA49F1F3944E300EE82DE /* FirebaseNotificationFootprint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseNotificationFootprint.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +76,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFA4891F393BC800EE82DE /* Shared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CFA47E1F393BC800EE82DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFA49B1F393C5800EE82DE /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				00CFA49A1F393C5800EE82DE /* FirebaseCore.framework in Frameworks */,
+				00CFA49D1F393C5800EE82DE /* FirebaseNanoPB.framework in Frameworks */,
+				00CFA49E1F393C5800EE82DE /* GoogleToolboxForMac.framework in Frameworks */,
+				00CFA4991F393C5800EE82DE /* FirebaseAnalytics.framework in Frameworks */,
+				00CFA49C1F393C5800EE82DE /* FirebaseInstanceID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				00CFA4581F393B8B00EE82DE /* FirebaseNotificationFootprint */,
+				00CFA4831F393BC800EE82DE /* Shared */,
+				00CFA4921F393C5800EE82DE /* Frameworks */,
 				00CFA4571F393B8B00EE82DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				00CFA4561F393B8B00EE82DE /* FirebaseNotificationFootprint.app */,
+				00CFA4821F393BC800EE82DE /* Shared.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +118,7 @@
 		00CFA4581F393B8B00EE82DE /* FirebaseNotificationFootprint */ = {
 			isa = PBXGroup;
 			children = (
+				00CFA49F1F3944E300EE82DE /* FirebaseNotificationFootprint.entitlements */,
 				00CFA4591F393B8B00EE82DE /* AppDelegate.swift */,
 				00CFA45B1F393B8B00EE82DE /* ViewController.swift */,
 				00CFA45D1F393B8B00EE82DE /* Main.storyboard */,
@@ -64,7 +129,42 @@
 			path = FirebaseNotificationFootprint;
 			sourceTree = "<group>";
 		};
+		00CFA4831F393BC800EE82DE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				00CFA4841F393BC800EE82DE /* Shared.h */,
+				00CFA48E1F393BEC00EE82DE /* TrackingService.swift */,
+				00CFA4901F393C1400EE82DE /* Firebase.swift */,
+				00CFA4851F393BC800EE82DE /* Info.plist */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		00CFA4921F393C5800EE82DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CFA4931F393C5800EE82DE /* FirebaseAnalytics.framework */,
+				00CFA4941F393C5800EE82DE /* FirebaseCore.framework */,
+				00CFA4951F393C5800EE82DE /* FirebaseCoreDiagnostics.framework */,
+				00CFA4961F393C5800EE82DE /* FirebaseInstanceID.framework */,
+				00CFA4971F393C5800EE82DE /* FirebaseNanoPB.framework */,
+				00CFA4981F393C5800EE82DE /* GoogleToolboxForMac.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00CFA47F1F393BC800EE82DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFA4861F393BC800EE82DE /* Shared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		00CFA4551F393B8B00EE82DE /* FirebaseNotificationFootprint */ = {
@@ -74,15 +174,35 @@
 				00CFA4521F393B8B00EE82DE /* Sources */,
 				00CFA4531F393B8B00EE82DE /* Frameworks */,
 				00CFA4541F393B8B00EE82DE /* Resources */,
+				00CFA47C1F393BAE00EE82DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00CFA4881F393BC800EE82DE /* PBXTargetDependency */,
 			);
 			name = FirebaseNotificationFootprint;
 			productName = FirebaseNotificationFootprint;
 			productReference = 00CFA4561F393B8B00EE82DE /* FirebaseNotificationFootprint.app */;
 			productType = "com.apple.product-type.application";
+		};
+		00CFA4811F393BC800EE82DE /* Shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CFA48B1F393BC800EE82DE /* Build configuration list for PBXNativeTarget "Shared" */;
+			buildPhases = (
+				00CFA47D1F393BC800EE82DE /* Sources */,
+				00CFA47E1F393BC800EE82DE /* Frameworks */,
+				00CFA47F1F393BC800EE82DE /* Headers */,
+				00CFA4801F393BC800EE82DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shared;
+			productName = Shared;
+			productReference = 00CFA4821F393BC800EE82DE /* Shared.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +216,18 @@
 				TargetAttributes = {
 					00CFA4551F393B8B00EE82DE = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QPU8QS3E62;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					00CFA4811F393BC800EE82DE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QPU8QS3E62;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				00CFA4551F393B8B00EE82DE /* FirebaseNotificationFootprint */,
+				00CFA4811F393BC800EE82DE /* Shared */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +262,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00CFA4801F393BC800EE82DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +281,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00CFA47D1F393BC800EE82DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CFA4911F393C1400EE82DE /* Firebase.swift in Sources */,
+				00CFA48F1F393BEC00EE82DE /* TrackingService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CFA4881F393BC800EE82DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00CFA4811F393BC800EE82DE /* Shared */;
+			targetProxy = 00CFA4871F393BC800EE82DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00CFA45D1F393B8B00EE82DE /* Main.storyboard */ = {
@@ -261,10 +418,13 @@
 		00CFA4691F393B8B00EE82DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseNotificationFootprint/FirebaseNotificationFootprint.entitlements;
+				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = FirebaseNotificationFootprint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.FirebaseNotificationFootprint;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.contextoptional.OpenTable-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -273,12 +433,73 @@
 		00CFA46A1F393B8B00EE82DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseNotificationFootprint/FirebaseNotificationFootprint.entitlements;
+				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = FirebaseNotificationFootprint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.FirebaseNotificationFootprint;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.contextoptional.OpenTable-Beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		00CFA48C1F393BC800EE82DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QPU8QS3E62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Shared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.Shared;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		00CFA48D1F393BC800EE82DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QPU8QS3E62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Shared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.Shared;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -299,6 +520,14 @@
 			buildConfigurations = (
 				00CFA4691F393B8B00EE82DE /* Debug */,
 				00CFA46A1F393B8B00EE82DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00CFA48B1F393BC800EE82DE /* Build configuration list for PBXNativeTarget "Shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CFA48C1F393BC800EE82DE /* Debug */,
+				00CFA48D1F393BC800EE82DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

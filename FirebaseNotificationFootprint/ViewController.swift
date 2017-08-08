@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func register(_ sender: Any) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (success, error) in
+            
+            let alert = UIAlertController(title: "Registration",
+                                          message: "Registration was \(success ? "successful" : "unsuccessful")",
+                preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { (action) in
+                alert.dismiss(animated: true, completion: nil)
+                UIApplication.shared.registerForRemoteNotifications()
+            })
+            self.present(alert, animated: true)
+        }
+    }
 }
-
