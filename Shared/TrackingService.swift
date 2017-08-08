@@ -10,7 +10,8 @@ import Foundation
 
 public final class TrackingService: NSObject {
 	
-	public static let sharedInstance: TrackingService = TrackingService()
+	public static var sharedInstance: TrackingService = TrackingService()
 
     fileprivate(set) public lazy var firebase: Firebase = { Firebase() }()
+    
 }

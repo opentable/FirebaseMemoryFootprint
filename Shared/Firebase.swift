@@ -12,6 +12,8 @@ import FirebaseAnalytics
 
 
 public class Firebase {
+    
+    public var dummyField: Bool = true // just so we can instantiate this class without having the optimizer kick in and optimize no-op code out
 
     public required init() {
         let options = FirebaseOptions(googleAppID: "1:157617603567:ios:461ea6ad218e734c",
@@ -39,5 +41,6 @@ public class Firebase {
         guard let activity = activity else { return }
         Analytics.handleUserActivity(activity)
 	}
+    
 
 }
