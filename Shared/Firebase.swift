@@ -11,9 +11,9 @@ import FirebaseCore
 import FirebaseAnalytics
 
 
-public class Firebase {
+public class Firebase: NSObject {
     
-    public required init() {
+    override public required init() {
         let options = FirebaseOptions(googleAppID: "1:157617603567:ios:461ea6ad218e734c",
                                       gcmSenderID: "157617603567")
         if let bundle = Bundle.main.bundleIdentifier {

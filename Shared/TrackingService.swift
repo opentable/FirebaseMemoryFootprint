@@ -9,8 +9,6 @@
 import Foundation
 
 public final class TrackingService: NSObject {
-	
-	public static var sharedInstance: TrackingService = TrackingService()
 
     // you'll notice that this is lazy loaded, but since firebase is statically linked into Shared, the mere fact
     // of loading Shared causes Firebase to kick in and eat up a lot of ram
