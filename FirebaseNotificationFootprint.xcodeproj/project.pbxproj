@@ -17,6 +17,7 @@
 		00C7EE0C1FBED1D400D3F551 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4961F393C5800EE82DE /* FirebaseInstanceID.framework */; };
 		00C7EE0D1FBED1D400D3F551 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4971F393C5800EE82DE /* FirebaseNanoPB.framework */; };
 		00C7EE0E1FBED1D400D3F551 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFA4981F393C5800EE82DE /* GoogleToolboxForMac.framework */; };
+		00C7EE101FBED26800D3F551 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C7EE0F1FBED26800D3F551 /* nanopb.framework */; };
 		00CFA45A1F393B8B00EE82DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFA4591F393B8B00EE82DE /* AppDelegate.swift */; };
 		00CFA45C1F393B8B00EE82DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFA45B1F393B8B00EE82DE /* ViewController.swift */; };
 		00CFA45F1F393B8B00EE82DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CFA45D1F393B8B00EE82DE /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		00C7EE001FBEC5A400D3F551 /* Canari.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Canari.m; sourceTree = "<group>"; };
 		00C7EE021FBECF5F00D3F551 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		00C7EE041FBECF7100D3F551 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		00C7EE0F1FBED26800D3F551 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		00CFA4561F393B8B00EE82DE /* FirebaseNotificationFootprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseNotificationFootprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CFA4591F393B8B00EE82DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CFA45B1F393B8B00EE82DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				00C7EE0B1FBED1D400D3F551 /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				00C7EE0C1FBED1D400D3F551 /* FirebaseInstanceID.framework in Frameworks */,
 				00C7EE0D1FBED1D400D3F551 /* FirebaseNanoPB.framework in Frameworks */,
+				00C7EE101FBED26800D3F551 /* nanopb.framework in Frameworks */,
 				00C7EE0E1FBED1D400D3F551 /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +190,7 @@
 		00CFA4921F393C5800EE82DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00C7EE0F1FBED26800D3F551 /* nanopb.framework */,
 				00C7EE041FBECF7100D3F551 /* SystemConfiguration.framework */,
 				00C7EE021FBECF5F00D3F551 /* StoreKit.framework */,
 				005E9C381F39503700F0724D /* AdSupport.framework */,
